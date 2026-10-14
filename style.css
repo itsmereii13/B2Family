@@ -273,12 +273,16 @@ nav {
 
 /* body NEWS */
 .back-to-news {
-    padding: 0 0 40px 0;
+    width: fit-content;
+    margin: 0 0 40px 0;
     cursor: pointer;
+    transition: all ease-in-out 100ms;
 }
 
 .back-to-news:hover {
-    text-decoration: underline;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
 }
 
 .news-page-title-expanded h1 {
@@ -299,7 +303,7 @@ nav {
 
 .news-body p {
     font-family: "Kantumruy Pro", sans-serif;
-    line-height: 2;
+    line-height: 1.75;
     padding: 10px 300px 0 300px;
     font-size: 22px;
 }
@@ -534,5 +538,20 @@ footer .report:hover {
 
     footer .report {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .recent-posts h1 {
+        font-size: 28px;
+    }
+
+    .card,
+    .news-card {
+        width: 300px;
+    }
+    
+    .news-body p {
+        padding: 0;
     }
 }
